@@ -3,4 +3,5 @@
 <p>学了一两个月的前端了， 是时候开始实践下了！</p>
 
 <strong>暂时先从模仿开始吧。。。</strong>
-<a href="http://blog.hi-hi.cn/">大概就是<span style="color: #8B4513">This</span></a>
+<a href="http://blog.hi-hi.cn/">大概就是This</a>
+<a href="http://trefoil.github.io/2013/12/07/compose-keycurly-opening-quotation-mark.html">or this</a>
