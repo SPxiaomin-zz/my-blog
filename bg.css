@@ -1,1 +1,35 @@
 body{background-color: #FDF5E6}
+
+a {
+    text-decoration: none; 
+    text-size: 20px;
+}
+
+a:hover {
+    font-size: 50px;
+}
+
+ul {
+    list-style: none; 
+    font-size: 2em; 
+}
+
+li {
+    color: #DCDCDC;
+    text-align: center;
+    margin-bottom: 3px;
+    border: 1px solid #DCDCDC;
+}
+
+ul li.blog{
+    color: black;
+    background-color: #DCDCDC;
+    padding-left: 1px;   
+    font-size: 1em;
+    margin-bottom: 1.5em;
+}
+
+div#header {
+    border: 1px solid #DCDCDC;
+    width: 100%;
+}
