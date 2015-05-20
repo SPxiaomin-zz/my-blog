@@ -4,20 +4,20 @@ a {
 }
 
 a:hover {
-    font-size: 50px;
+    text-decoration: underline;
 }
 
 ul {
     width: 300px;
     list-style: none; 
-    font-size: 2em; 
+    font-size: 1em; 
 }
 
 li {
     color: #DCDCDC;
     text-align: center;
     border: 1px solid #DCDCDC;
-    margin-left: 5px;
+    margin-left: 20px;
 }
 
 ul li.blog{
@@ -45,6 +45,7 @@ div#header{
     background: #DCDCDC;
     clear: both;
     margin-bottom: 20px;
+    height: 40px;
 }
 
 div#menu{
