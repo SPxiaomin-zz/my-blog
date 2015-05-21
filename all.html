@@ -4,9 +4,27 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <title>gujunmin</title>
+        <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+            <script>
+            $(document).ready(function(){
+                	$('blockquote#content2').hide();
+                    $('a#blog').click(function(){
+                        $('blockquote#content1').show('show');
+                        $('blockquote#content2').hide();
+                        return false;
+                        });
+                    });
+                $(document).ready(function(){
+                    $('a#contentone').click(function(){
+                        $('blockquote#content2').show('slow');
+                        $('blockquote#content1').hide();
+                    	return false;
+                    });
+                });
+        </script>
         <style type="text/css">
             * {
-            margin: 0;
+                margin: 0;
             padding: 0;
             border: 0;
         }
@@ -19,13 +37,13 @@
     		text-decoration: underline;
 		}
 
-			ul {
+			ul#ul {
     		width: 300px;
     	list-style: none; 
     	font-size: 1em; 
 		}
 
-			li {
+			ul#ul li {
     	color: #DCDCDC;
     	text-align: left;
         padding-left: 5px;
@@ -35,7 +53,7 @@
         height: 25px;
         }
         
-        	ul li.blog{
+        	ul#ul li.blog{
             color: black;
             background-color: #DCDCDC;
             padding-left: 5px;   
@@ -70,21 +88,29 @@
         	div#content{
             float: left;
         }
+        blockquote#content2 li {
+              margin: 10px;
+              padding: 10px;
+              margin-left: 50px;
+            }
+            blockquote#content2 p {
+ 			 padding: 10px;
+			}
        
         </style>
     </head>
 
     <div id="container">
-        <div id="header">
-            <p><span style="padding-top: 10px; margin: 0;">Junmin Gu</span>
+        <div id="header" >
+            <p><p style="float: left; padding: 10px;">Junmin Gu</p>
                 <a href="https://www.github.com/SPxiaomin" style="float: right; padding: 10px;"  target=_black>Github</a>
-            <a href="#" style="float: right; padding: 10px;">Blog</a>
+            <a href="#" style="float: right; padding: 10px;" id="blog">Blog</a>
             </p>
         </div>
-        <div id="menu">
-             <ul>
+        <div id="menu" >
+             <ul id="ul">
                  <li class="blog"><i>Blog</i></li>
-                 <li> <a href="resume.html" target="content"> <i style="color: #48D1CC">resume</i></a></li>
+                 <li> <a href="#" id="contentone"> <i style="color: #48D1CC">resume</i></a></li>
                 <li> <a href="https://github.com/SPxiaomin/Reading" target="content"> <i style="color: #48D1CC">learn process</i></a> </li>
                 <li>...</li>
                 <li>...</li>
@@ -96,19 +122,87 @@
                 <li>...</li>
             </ul>
         </div>
-        <div id="content" name="content" style="padding-left: 30px;">
+        <div id="content" name="content" style="padding-left: 30px;" >
             <br />
             <blockquote>
                 <blockquote>
-                    <blockquote>
+                    <blockquote id="content1">
                         <p>欢迎来到小站</p>
                         <p>大一学生党<br>
                         热爱<strong style="color: #FF69B4"><i>学习</i></strong><br>
                         <strong style="color: #FF69B4"><i>进步</i></strong><br>
                         渴望<strong style="color: #FF69B4"><i>变强</i></strong></p>
                     </blockquote>
+                    <blockquote id="content2" style="float: left;">
+                        <h1 id="wzxhzdk0self-introductionwzxhzdk1"><i style="color: #FF69B4";>谷俊民/self-introduction</i></h1>
+                        <blockquote>
+                        <p>SKILLS:</p>
+                        <blockquote>
+                        <ul>
+                        <li>
+                        <p><code>Python</code></p>
+                        </li>
+                        <li>
+                        <p>web:</p>
+                        <blockquote>
+                        <ul>
+                        <li><code>html/css/js/jquery</code></li>
+                        </ul>
+                        </blockquote>
+                        </li>
+                        <li>
+                        <p><code>Java</code></p>
+                        </li>
+                        <li>
+                        <p>linux:</p>
+                        <blockquote>
+                        <ul>
+                        <li><code>ubuntu</code><br />
+                        </li>
+                        <li><code>bash</code></li>
+                        </ul>
+                        </blockquote>
+                        </li>
+                        <li>edit:<blockquote>
+                        <ul>
+                        <li><code>vim</code>(favorite)</li>
+                        <li><code>sublime</code></li>
+                        </ul>
+                        </blockquote>
+                        </li>
+                        <li>database:<blockquote>
+                        <ul>
+                        <li><code>mysql</code></li>
+                        </ul>
+                        </blockquote>
+                        </li>
+                        <li>版本控制：<blockquote>
+                        <ul>
+                        <li>git<blockquote>
+                        <ul>
+                        <li>github</li>
+                        </ul>
+                        </blockquote>
+                        </li>
+                        </ul>
+                        </blockquote>
+                        </li>
+                        </ul>
+                        </blockquote>
+                        </blockquote>
+                        <p><strong>Note:</strong><br />
+                        </p>
+                        <blockquote>
+                        <blockquote>
+                        <p>大一学生党，目前正在折腾当中， 难受， <br />
+                        <strong>however, I will insist</strong><br />
+                        <strong>nothing can hinder me.</strong></p>
+                        </blockquote>
+                        </blockquote>
+                    </blockquote>
                 </blockquote>
             </blockquote>
         </div>
+    
     </div>
 </html>
